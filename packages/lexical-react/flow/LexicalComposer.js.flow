@@ -12,6 +12,7 @@ import type {
   LexicalEditor,
   LexicalNode,
   EditorState,
+  HTMLConfig,
 } from 'lexical';
 
 export type InitialEditorStateType =
@@ -31,6 +32,7 @@ export type InitialConfigType = $ReadOnly<{
   theme?: EditorThemeClasses,
   editorState?: InitialEditorStateType,
   onError: (error: Error, editor: LexicalEditor) => void,
+  html?: HTMLConfig,
 }>;
 
 type Props = {
